@@ -1,0 +1,234 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+#logo {
+  color: white;
+  font-weight: bold;
+}
+
+.navHolder {
+  position: fixed;
+  width: 100%;
+}
+
+#mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  padding: 1em;
+  display: none;
+}
+
+.bars {
+  display: none;
+  height: 0;
+  background-color: crimson;
+  margin: 0;
+}
+
+.bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: white;
+  height: 3px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.links {
+  display: flex;
+  background-color: crimson;
+  height: 50px;
+  width: 100vw;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: -10px;
+  transition: height 0s, opacity 0.2s ease-in;
+}
+
+.bars.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.bars.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.bars.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(135deg);
+}
+
+.links.active {
+  height: 100vh;
+  opacity: 1;
+}
+
+@media screen and (max-width: 960px) {
+  #mobile-nav {
+    display: flex;
+  }
+  .bars {
+    display: block;
+    height: 25px;
+  }
+  .links {
+    height: 0;
+    opacity: 0;
+    flex-direction: column;
+  }
+}
+#home {
+  text-align: center;
+  padding-bottom: 5em;
+}
+#home p {
+  text-align: left;
+  line-height: 1.5em;
+  width: 65%;
+  padding-left: 3em;
+}
+
+header {
+  height: 600px;
+  background-color: antiquewhite;
+  background-image: url(../images/hero.jpeg);
+  background-size: cover;
+}
+
+#imgs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  padding: 5em 2em;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card .image {
+  height: 200px;
+  width: 200px;
+  background-color: beige;
+  background-position: center bottom;
+  background-size: cover;
+}
+.card p {
+  width: 200px;
+  height: 150px;
+  padding: 0.5em;
+  overflow: hidden;
+  background-color: rgba(248, 255, 180, 0.3);
+}
+
+#detail {
+  height: 200px;
+  width: 200px;
+  background-color: beige;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+#one {
+  background-image: url(../images/thumb10_200x200.jpg);
+}
+
+#two {
+  background-image: url(../images/thumb11_200x200.jpg);
+}
+
+#three {
+  background-image: url(../images/thumb12_200x200.jpg);
+}
+
+#four {
+  background-image: url(../images/thumb13_200x200.jpg);
+}
+
+#five {
+  background-image: url(../images/thumb1_200x200.jpg);
+}
+
+#six {
+  background-image: url(../images/thumb2_200x200.jpg);
+}
+
+#seven {
+  background-image: url(../images/thumb3_200x200.jpg);
+}
+
+#eight {
+  background-image: url(../images/thumb4_200x200.jpg);
+}
+
+#nine {
+  background-image: url(../images/thumb5_200x200.jpg);
+}
+
+#ten {
+  background-image: url(../images/thumb6_200x200.jpg);
+}
+
+#eleven {
+  background-image: url(../images/thumb7_200x200.jpg);
+}
+
+#twelve {
+  background-image: url(../images/thumb8_200x200.jpg);
+}
+
+#thirteen {
+  background-image: url(../images/thumb9_200x200.jpg);
+}
+
+.btn-holder {
+  height: 3em;
+  justify-content: space-around;
+  margin-top: 0.5em;
+  display: flex;
+}
+
+.btn {
+  height: 2em;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 118, 68);
+  align-items: center;
+  color: white;
+  border-radius: 2em;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.photo:hover .btn {
+  visibility: visible;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

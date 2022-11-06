@@ -1,0 +1,15 @@
+{
+  "name": "hw-three",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "scss": "sass --watch scss/:css/",
+    "serve": "live-server"
+  },
+  "author": "Anant Batgali",
+  "license": "ISC"
+}

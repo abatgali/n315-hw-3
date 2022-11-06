@@ -1,0 +1,118 @@
+#imgs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  padding: 5em 2em;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card .image {
+  height: 200px;
+  width: 200px;
+  background-color: beige;
+  background-position: center bottom;
+  background-size: cover;
+}
+.card p {
+  width: 200px;
+  height: 150px;
+  padding: 0.5em;
+  overflow: hidden;
+  background-color: rgba(248, 255, 180, 0.3);
+}
+
+#detail {
+  height: 200px;
+  width: 200px;
+  background-color: beige;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+#one {
+  background-image: url(../images/thumb10_200x200.jpg);
+}
+
+#two {
+  background-image: url(../images/thumb11_200x200.jpg);
+}
+
+#three {
+  background-image: url(../images/thumb12_200x200.jpg);
+}
+
+#four {
+  background-image: url(../images/thumb13_200x200.jpg);
+}
+
+#five {
+  background-image: url(../images/thumb1_200x200.jpg);
+}
+
+#six {
+  background-image: url(../images/thumb2_200x200.jpg);
+}
+
+#seven {
+  background-image: url(../images/thumb3_200x200.jpg);
+}
+
+#eight {
+  background-image: url(../images/thumb4_200x200.jpg);
+}
+
+#nine {
+  background-image: url(../images/thumb5_200x200.jpg);
+}
+
+#ten {
+  background-image: url(../images/thumb6_200x200.jpg);
+}
+
+#eleven {
+  background-image: url(../images/thumb7_200x200.jpg);
+}
+
+#twelve {
+  background-image: url(../images/thumb8_200x200.jpg);
+}
+
+#thirteen {
+  background-image: url(../images/thumb9_200x200.jpg);
+}
+
+.btn-holder {
+  height: 3em;
+  justify-content: space-around;
+  margin-top: 0.5em;
+  display: flex;
+}
+
+.btn {
+  height: 2em;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 118, 68);
+  align-items: center;
+  color: white;
+  border-radius: 2em;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.photo:hover .btn {
+  visibility: visible;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=browse.css.map */

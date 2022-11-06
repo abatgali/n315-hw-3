@@ -1,0 +1,19 @@
+#home {
+  text-align: center;
+  padding-bottom: 5em;
+}
+#home p {
+  text-align: left;
+  line-height: 1.5em;
+  width: 65%;
+  padding-left: 3em;
+}
+
+header {
+  height: 600px;
+  background-color: antiquewhite;
+  background-image: url(../images/hero.jpeg);
+  background-size: cover;
+}
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,24 @@
+#app {
+
+}
+
+#home {
+    text-align: center;
+
+    p {
+        text-align: left;
+        line-height: 1.5em;
+        width: 65%;
+        padding-left: 3em;
+
+    }
+
+    padding-bottom: 5em;
+}
+
+header {
+    height: 600px;
+    background-color: antiquewhite;
+    background-image: url(../images/hero.jpeg);
+    background-size: cover;
+}
